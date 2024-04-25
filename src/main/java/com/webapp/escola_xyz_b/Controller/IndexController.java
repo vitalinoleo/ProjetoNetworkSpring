@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 
+@SuppressWarnings("unused")
 @Controller
 public class IndexController {
 
@@ -38,6 +39,11 @@ public class IndexController {
     @GetMapping("/Contato")
     public String acessoPageContatoProfessor() {
         return "Contato/Contato";
+    }
+
+    @GetMapping("/sobre")
+    public String acessoPageSobre() {
+        return "sobre/sobre";
     }
     
     
